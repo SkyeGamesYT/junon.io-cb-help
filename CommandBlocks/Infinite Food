@@ -1,0 +1,20 @@
+(Trigger): ItemConsumed
+
++ Commands
+
+    /clear $player $itemType
+    /give $player $itemType
+    
+    -- Write exactly as stated above
+    -- For commands: each line is new command
+    
+    Example:
+    
+    ItemConsumed
+    
+    + Commands
+    
+    /clear $player SlimyMeatPizza
+    /give $player SlimyMeatPizza
+    
+    
