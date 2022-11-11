@@ -3,9 +3,9 @@ some things I've learned using junon.io command blocks!
 
 # Functions
 
-I know a lot of IfThenElse statements; here are a few!
+I know a lot of IfThenElse statements; here are a few
 
-** These can only be used in sandbox mode.**
+ These can only be used in sandbox mode.
 
 * Rapid-Fire and Unbreakable tools
 
