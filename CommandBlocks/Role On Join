@@ -9,3 +9,18 @@ Then
 + Commands
 
 /role $player {role you want to role them; must be spelled exactly the same. CaPs SeNsItIvE}
+
+
+Example:
+
+PlayerJoined
+
+IfThenElse
+  If
+    $playerRole
+    =
+    Guest
+ Then
+ + Commands
+ 
+ /role $player Prisoner
