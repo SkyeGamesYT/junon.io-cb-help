@@ -1,0 +1,23 @@
+(Trigger): PlayerMessage
+
+IfThenElse
+  If 
+    $message
+    =
+    /spawn -- Command chosen, you can change.
+Then
+  + Commands
+  
+/tp $player {1 1} -- Coordinates to selected location.
+
+Example
+
+IfThenElse
+  If
+    $message
+    =
+    /spawn
+Then
+  + Commands
+  
+/tp $player 6 6
