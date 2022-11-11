@@ -14,18 +14,21 @@ For Advanced Role Kits use this:
 
 IfThenElse
   If
-    $playerRole
+    $message
     =
-    {role you want to only be able to use /kit}
+    /kit {name, CaPs SeNsItIvE}
 Then
 
 + IfThenElse
   If
-    $message
+    $playerRole
     =
-    /kit {name}
+    {role you want to recieve kit when doing /kit}
  Then
  
  + Commands
  
  /kit give $player {kit name, CaPs SeNsItIvE}
+(Optional): Else
++ Commands
+/chat $player %error% Incorrect Permissions {you can change this to own error message}
