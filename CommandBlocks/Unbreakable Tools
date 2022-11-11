@@ -1,0 +1,8 @@
+(Trigger): Item Used
+
++ Commands
+
+/clear $player $itemType
+/give $player $itemType
+
+-- Write in exact order above
