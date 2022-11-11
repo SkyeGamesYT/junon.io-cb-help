@@ -1,0 +1,11 @@
+(Trigger): PlayerJoin
+  IfThenElse
+    If
+      $player
+      =
+      {exact player name: include exact capatals: example: ExamplePlayer}
+ Then
+ 
+ + Commands
+ 
+  /ban {exact player name, or just use $player}
