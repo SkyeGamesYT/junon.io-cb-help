@@ -24,4 +24,4 @@ And others!
 
 # Suggestions?
 
-Add some suggestions in Issues!
+Add some suggestions in Issues using Tag: Enhancement 
