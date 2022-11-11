@@ -23,6 +23,8 @@ I know a lot of IfThenElse statements; here are a few
 
 * Ban certain player on join
 
+* Show mob health in name on damage
+
 
 # Suggestions?
 
