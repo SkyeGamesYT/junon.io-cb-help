@@ -20,3 +20,8 @@ I know a lot of IfThenElse statements; here are a few
 * Infinite Food
 
 And others!
+
+
+# Suggestions?
+
+Add some suggestions in Issues!
