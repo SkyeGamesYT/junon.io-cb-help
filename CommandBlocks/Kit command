@@ -1,0 +1,31 @@
+(Trigger): PlayerMessage
+
+IfThenElse
+  If
+    $message
+    =
+    /kit {name}
+Then
++ Commands
+/kit give $player {kit name, you need to create one before you use command}
+
+For Advanced Role Kits use this:
+
+
+IfThenElse
+  If
+    $playerRole
+    =
+    {role you want to only be able to use /kit}
+Then
+
++ IfThenElse
+  If
+    $message
+    =
+    /kit {name}
+ Then
+ 
+ + Commands
+ 
+ /kit give $player {kit name, CaPs SeNsItIvE}
