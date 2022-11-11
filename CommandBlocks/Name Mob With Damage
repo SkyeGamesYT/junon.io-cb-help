@@ -1,0 +1,25 @@
+(Trigger): MobAttacked
+
+IfThenElse
+  If
+    $entityType
+    =
+    {put name of Mob, Example: Slime}
+Then
+
++ Commands
+
+/name set $entityId Health: $subtract($getHealth($entityId),$damage) / {Starting Health}
+
+Example
+
+IfThenElse
+  If
+    $entityType
+    =
+    Slime
+ Then
+ 
+ + Commands
+ 
+ /name set $entityId Slime Health: $subtract($getHealth($entityId),$damage) / 10
