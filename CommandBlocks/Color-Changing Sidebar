@@ -1,0 +1,56 @@
+Part 1:
+
+There are 2 choices to this.
+
+1. Have this on the PlayerJoin
+If on the PlayerJoin; then create a list of your sidebar commands under:
+PlayerJoin
+
++ Commands
+
+Sidebar Exapmles. (What I have for my game)
+
+/sidebar set 1 §e Welcome To CottageCore Simulated RPG
+/sidebar set 2 §c ----------
+/sidebar set 3 §6 How to play:
+
+-- And So on..
+
+2nd Choice.
+
+Instead of PlayerJoin, use WorldLoaded. Then repeat command steps above.
+
+Once done with sidebar commands; use the command /timer start {any name} {1-3} -- 1-3 is the amount of time between color change.
+
+Part 2: 
+(Trigger): TimerStart
+  IfThenElse
+    If
+      $name
+      =
+      {name of timer, I used ScoreboardChange}
+ Then
+ + Commands
+ 
+ {paste same sidebar commands, make sure they are in correct order.}
+ 
+ Part 3:
+ 
+ (Trigger): TimerEnd
+ IfThenElse
+    If
+      $name
+      =
+      {use same timer for TimerStart, Once again I used ScoreboardChange}
+  Then
+  
+  + Commands
+  
+  {paste same sidebar commands from above, but make sure to change the §{color} so it works, use https://junonio.fandom.com/wiki/Sidebar_(command) }
+  
+  Part 4:
+  After done with sidebar, use /timer start {final time to put the timer name, I kept ScoreboardChange} {same duration, 1-3. I used 2}
+  
+  Thats it! It should work.
+  To Start it, Re-join the world if you have WorldLoaded, or wait for someone to join if you have PlayerJoined.
+  
