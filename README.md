@@ -21,7 +21,7 @@ I know a lot of IfThenElse statements; here are a few
 
 * Infinite Food
 
-And others!
+* Ban certain player on join
 
 
 # Suggestions?
