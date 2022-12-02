@@ -1,0 +1,25 @@
+This command block is; for example, if you want to have a custom shop, and you use a building instead of trader, then you want custom prices.
+this command block also checks if the player has enough gold to purchase the item.
+
+Trigger (InteractBuilding)
+
+  IfThenElse
+    If
+      $entityId
+      =
+      664 (I used a button for this, you just put the entity id of the item you want to use as the purchase button.)
+   Then
+    IfThenElse
+      If
+        $getGold($player)
+        >=
+        200 (price of item)
+     Then
+    + Commands
+    /give $player LeadPipe (Item sold to player)
+    /gold lose $player 200 (cost of item)
+   
+   Else
+(optional)
++ Commands
+/chat $player %error% Not Enough Gold.
