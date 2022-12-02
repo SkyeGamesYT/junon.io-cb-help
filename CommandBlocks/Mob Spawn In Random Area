@@ -1,0 +1,12 @@
+Trigger (MobDestroyed)
+
+  IfThenElse
+    If
+      $entityType
+      =
+      Slime [can be any mob, I used slime for this example]
+   Then
+   + Commands
+  /spawnmob slime 1 $random(2,41) $random(57,84) attackables:players taming:false status:hostile
+  
+  This makes it so that a mob will spawn between (2,57) and (41,84) You can change the cords, these are just preset ones. (x1,x2) (y1,y2) for template.
