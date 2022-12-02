@@ -1,0 +1,32 @@
+Trigger (InteractBuilding)
+
+IfThenElse
+  If
+    $entityId
+    =
+    [id of selaed door you want to make become a keycard, make sure all roles can not open the door]
+Then
+  IfThenElse
+    If
+      $getEquip($player)
+      =
+      [item you want to use as keycard, I used survival tool]
+Then
+  + Commands
+      /interact [door id] open
+      
+      
+      Note. I suggest making the door close after player exit with a region. The code for that is below
+      
+ Trigger (RegionLeave)
+ 
+  IfThenElse
+    If
+      $region
+      =
+      [name of region for door, I just used "door"]
+   Then
+   + Commands
+        /interact [door id] close
+        
+        -- I suggest making the region size a box around the door, but not too large.
