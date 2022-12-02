@@ -25,6 +25,12 @@ I know a lot of IfThenElse statements; here are a few
 
 * Show mob health in name on damage
 
+* Randomize Mob Spawning
+
+* Shop Buttons
+
+* "Keycard" Doors
+
 
 # Suggestions?
 
